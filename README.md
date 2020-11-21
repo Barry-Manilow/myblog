@@ -1,1 +1,1 @@
-# pamda_blog
+# myblog
