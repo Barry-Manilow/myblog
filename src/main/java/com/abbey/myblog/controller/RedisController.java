@@ -19,7 +19,8 @@ public class RedisController {
     @GetMapping(value = "getUserByRedis")
     public String getIndex(){
         stringRedisTemplate.opsForValue().set("xiaocai", "888");
-        String res = stringRedisTemplate.opsForValue().get("xiaocai");
+        stringRedisTemplate.opsForValue().set("lianying", "999");
+        String res = stringRedisTemplate.opsForValue().get("lianying");
         System.out.println(res);
         return res;
     }
